@@ -6,8 +6,54 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Forms</h1>
-    <form></form>
+    <form>
+    <fieldset>
+        <legend>Kişisel:</legend>
+    <!--İsim Soyisim-->
+    <div>
+        <label for="firstname">İsim:</label>
+        <input type="text" id="firstname" required><br>
+        <label for="lastname">Soyisim:</label>
+        <input type="text" id="lastname" required><br>
+    </div>
+     <!--Email-->
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email"> <br>
+    </div>
+     <!--Password-->
+    <div>
+        <label for="password">Şifre</label>
+        <input type="password" id="password">
+    </div>
+    <!--Cinsiyet-->
+    <div>
+        <label for="gender">Cinsiyet:</label>
+        <input type="radio" name="gender" value="female"> Kadın
+        <input type="radio" name="gender" value="male"> Erkek
+    </div>
+    <!--Meyve-->
+    <div>
+            <label for="fruits">Meyve:</label>
+            <select id="fruits">
+                <option value="">Seçiniz...</option>
+                <option value="Elma">Elma</option>
+                <option value="Muz">Muz</option>
+                <option value="Çilek">Çilek</option>
+            </select>
+    </div>
+    <!--Textarea-->
+    <div>
+        <br>
+        <label for="message">Mesajınızı yazın:</label>
+        <br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Mesajınızı buraya yazın..."></textarea>
+    </div>
+    <input type="submit">
+    
+
+    </fieldset>
+    </form>
     
 </body>
 </html>
